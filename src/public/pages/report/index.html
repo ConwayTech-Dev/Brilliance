@@ -55,7 +55,7 @@
                         <select id="load-type-dropdown">
                             <option value="pgn">PGN</option>
                             <option value="chesscom">Chess.com</option>
-                            <option value="lichess">Lichess.org</option>
+                            <option value="lichess">Lichess</option>
                             <option value="json">JSON</option>
                         </select>
                     </div>
@@ -99,12 +99,12 @@
 
                     <b id="secondary-message" class="white"></b>
 
-                    <div id="report-cards">
+                    <div id="report-cards" class="show">
                         <div class="accuracyHolder">
-                        <h2 id="accuracies-title" class="white">Accuracy<div class="accuracyDiv"><b id="white-accuracy" class="accuracies">0%</b>
-                            <b id="black-accuracy" class="accuracies">0%</b></div></h2>
+                        <h2 id="accuracies-title" class="white">Accuracy<div class="accuracyDiv"><b id="white-accuracy" class="accuracies">100%</b>
+                            <b id="black-accuracy" class="accuracies">100%</b></div></h2>
                         </div>
-    
+                        <span id="opening-name" class="white"></span>
                         <div id="classification-message-container">
                             <img id="classification-icon" src="/static/media/book.png" height="25">
                             <b id="classification-message"></b>
@@ -115,7 +115,6 @@
                         <div id="engine-suggestions">
                             <h2 id="engine-suggestions-title" class="white">Engine</h2>
                         </div>
-                        <span id="opening-name" class="white"></span>
                     </div>
                 </div>
 
