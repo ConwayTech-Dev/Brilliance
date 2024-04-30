@@ -27,7 +27,6 @@
     <audio id="sound-fx-castle" class="sound-fx-board" src="/static/media/castle.mp3"></audio>
     <audio id="sound-fx-promote" class="sound-fx-board" src="/static/media/promote.mp3"></audio>
     <audio id="sound-fx-game-end" class="sound-fx-board" src="/static/media/game_end.mp3"></audio>
-
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="https://kit.fontawesome.com/bb36c502e7.js" crossorigin="anonymous"></script>
 
@@ -40,18 +39,17 @@
 
 
                 <div id="board-inner-container" class="center">
-                    <div id="top-player-profile" class="profile">Black Player (?)</div>
+                    <div id="top-player-profile" class="profile">Black</div>
 
                     <canvas id="board" width="1280" height="1280"></canvas>
-                    
-                    <div id="bottom-player-profile" class="profile">White Player (?)</div>
+                    <div id="bottom-player-profile" class="profile">White</div>
                 </div>
             </div>
     
             
             <div id="review-panel">
                 <div id="review-panel-main">
-                    <h1 class="logo" id="review-panel-title" class="white"><i class="knight fa-solid fa-chess-knight" style="color: #ffffff;"></i>Game Report</h1>
+                    <h1 class="logo" id="review-panel-title" class="white"><i class="knight fa-solid fa-chess-knight" style="color: #ffffff;"></i>Brilliance</h1>
 
                     <div id="load-type-dropdown-container" class="white">
                         <select id="load-type-dropdown">
@@ -66,7 +64,7 @@
                 </div>
                 
                     <div id="gameInputContainer2" class="gameInputContainer" >
-                        <textarea id="chess-site-username" class="white" spellcheck="false" maxlength="48" placeholder="Username..."></textarea>
+                        <textarea id="chess-site-username" class="white" spellcheck="false" maxlength="48" placeholder="Enter username..."></textarea>
                         <button id="fetch-account-games-button" class="usernameVerifyBtn">
                             <i class="usernameVerifyBtnIcon fa-solid fa-arrow-right contol-icons" style="color: #ffffff;"></i>
                         </button>
@@ -75,7 +73,7 @@
 
                     <button id="review-button" class="analyse">
                         <i class="mag fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
-                        <b>Analyse</b>
+                        <b>Analyze Game</b>
                     </button>
 
                     <div class="big-depth-container">
@@ -103,7 +101,7 @@
 
                     <div id="report-cards">
                         <div class="accuracyHolder">
-                        <h2 id="accuracies-title" class="white">Accuracies<div class="accuracyDiv"><b id="white-accuracy" class="accuracies">0%</b>
+                        <h2 id="accuracies-title" class="white">Accuracy<div class="accuracyDiv"><b id="white-accuracy" class="accuracies">0%</b>
                             <b id="black-accuracy" class="accuracies">0%</b></div></h2>
                         </div>
     
@@ -136,10 +134,6 @@
 
                         <i id="save-analysis-button" class="fa-solid fa-floppy-disk" style="color: #ffffff;" data-tooltip="Save"></i>
 
-                    </div>
-                    <div class="footer white privacyPolicyThingy">
-                        A website by wintrcat
-                        <a href="/privacy">Privacy Policy</a>
                     </div>
 
             </div>
